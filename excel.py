@@ -150,8 +150,8 @@ class XlsxMake():
 		sheet.set_column('K:K',15)
 		# 日期格式，星期六和星期日用特别颜色标注出来
 		date_format = self.book.add_format({'num_format': 'yyyy/mm/dd', 'align': 'center', 'valign': 'vcenter', 'border': 1})
-		week_format = self.book.add_format({'num_format': 'hh:mm', 'align': 'center', 'valign': 'vcenter', 'border': 1, 'bg_color': '#E1E1E1'})
-		day_format = self.book.add_format({'num_format': 'hh:mm', 'align': 'center', 'valign': 'vcenter', 'border': 1})
+		week_format = self.book.add_format({'num_format': '[hh]:mm', 'align': 'center', 'valign': 'vcenter', 'border': 1, 'bg_color': '#E1E1E1'})
+		day_format = self.book.add_format({'num_format': '[hh]:mm', 'align': 'center', 'valign': 'vcenter', 'border': 1})
 		# 添加表格内容
 		j=0
 		for i in range(int(title[2])):
